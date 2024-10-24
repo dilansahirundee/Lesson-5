@@ -6,8 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Personal details form</h1>
+    
     <form>
+        <fieldset>
+             <legend><h1>Personal details form</h1></legend>
         <label>Name</label><br>
         <input type="text" id="Name"><br><br>
         <label>Email Id</label><br>
@@ -15,12 +17,22 @@
         <label>contact number (this will be hidden)</label><br>
         <input type="password" id="contact"><br><br>
         <label>Gender</label><br>
-        <input type="radio" id="male" name="Gender" value="male"><br><br>
-        <input type="radio" id="Female" name="Gender" value="Female"><br><br>
+        <input type="radio" id="male" name="Gender" value="male">male<br><br>
+        <input type="radio" id="Female" name="Gender" value="Female">Female<br><br>
         <label>Favourite city</label><br>
         <input type="checkbox" id="city" value="New Delhi">New Delhi<br><br>
         <input type="checkbox" id="city" value="Mumbai">Mumbai<br><br>
+        <label>Chose a Subject</label>
+        <Select name="Subjects" id="Subjects">
+            <option value="Maths">Maths</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+            <option value="ICT">ICT</option>
+            <option value="Art">Art</option>
+        </Select><br><br>
         <input type="submit">
+        </fieldset>
+
   </form>
     
 </body>
